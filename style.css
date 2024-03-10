@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body {
+  width: 100%;
+  text-shadow: 0 0 5px olivedrab;
+  background-color: #d8d2d2;
+  height: 100%;
+  font-size: larger;
+  font-family: Ubuntu;
+  color: rgb(38, 35, 31);
+  margin: 0%;
+  text-align: center;
+} 
+
+.dark-mode {
+  background: #393131;
+  color: #d8d2d2;
+}
+
+#profile {
+  width: 25%;
+  height: 25%;
+  border-radius: 60%;
+  animation: profile 1.5s infinite;
+}
+
+@keyframes profile {
+  to {
+    box-shadow: 0 0 15px rgb(242, 4, 4);
+   
+  }
+  from {
+    box-shadow: none;
+
+  }
+}
+
+
+#topic {
+  width: 100%;
+  position:relative;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+#containt {
+  height: fit-content;
+}
+
+#projects {
+  background-image: url(images/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+li{
+  list-style: none;
+  display: inline-flex;
+}
+
+#contracts {
+  box-shadow: 0 0 4px red;
+}
+
+#form {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input {
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 2px rgb(198, 39, 39);
+  height: 1em;
+  font-size: 15px;
+  color: rgb(237, 11, 11);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+fieldset input {
+  box-shadow: none;
+  height: auto;
+}
+
+#button {
+  padding: auto;
+  height: 3em;
+}
+
+#button:active {
+  box-shadow: 0 0 5px green;
+  background: #393131;
+  transform: rotate(2deg);
+}
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:visited {
+  color: cadetblue;
+}
+
+.to-sale {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.outer {
+  border: 5px solid brown;
+  width: 50%;
+}
+
+.item {
+  width: 15rem;
+}
