@@ -1,122 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  width: 100%;
-  text-shadow: 0 0 5px olivedrab;
-  background-color: #d8d2d2;
-  height: 100%;
-  font-size: larger;
-  font-family: Ubuntu;
-  color: rgb(38, 35, 31);
-  margin: 0%;
-  text-align: center;
-} 
-
-.dark-mode {
-  background: #393131;
-  color: #d8d2d2;
-}
-
-#profile {
-  width: 25%;
-  height: 25%;
-  border-radius: 60%;
-  animation: profile 1.5s infinite;
-}
-
-@keyframes profile {
-  to {
-    box-shadow: 0 0 15px rgb(242, 4, 4);
-   
-  }
-  from {
-    box-shadow: none;
-
-  }
-}
-
-
-#topic {
-  width: 100%;
-  position:relative;
-  height: fit-content;
-  flex-wrap: wrap;
-}
-
-#containt {
-  height: fit-content;
-}
-
-#projects {
-  background-image: url(images/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg);
+  background-color: #343;
+  background-image: url(images/images/Lumii_20231206_071953120.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
+  width: 100%;
 }
 
-li{
-  list-style: none;
-  display: inline-flex;
+img {
+  z-index: -1;
+  position: fixed;
+  padding: 0;
+  left: 10%;
 }
 
-#contracts {
-  box-shadow: 0 0 4px red;
-}
-
-#form {
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   
+.closebtn, .open {
+    display: none;
+     font-size: 35px;
+    position: fixed;
+    right: 5%;
+    color: aliceblue;
+    top: 3%;
+    text-shadow: 0 0 4px rgb(33, 33, 37);
+  }
+
+
+  .overlay-content a {
+    color: rgb(246, 246, 246);
+    font-weight: 800;
+    text-decoration: none
+  }
+  
+  .overlay-content ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .overlay-content ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 2em;
+    color: white;
+  }
+  .overlay-content ul li a:hover {
+    color: #f1f1f1;
+    transform: scale(2);
+  }
+
+  .details {
+    padding-top: 1em;
+    padding-left: 2em;
+    font-size: 40px;
+    color: #f1f1f1;
+    font-weight: 700;
+    text-shadow: 1px 2px black;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .txt {
+    padding-top: 2em;
+  }
+
+
+@media screen and (max-width: 768px) {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  img {
+    left: 10%;
+  }
+
+  .details {
+    padding-top: 10em;
+    padding-left: 1em;
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: 700;
+    text-shadow: 1px 2px black;
+  }
+
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  .closebtn, .open {
+    display: block;
+  }
+
+  .overlay-content ul {
+    display: inline-block;
+
+  }
+
+  .overlay-content ul li {
+   padding: 0;
+  }
+ 
 }
 
-input {
-  background: transparent;
-  border: none;
-  box-shadow: 0 0 2px rgb(198, 39, 39);
-  height: 1em;
-  font-size: 15px;
-  color: rgb(237, 11, 11);
-  padding: 1em;
-  border-radius: 5px;
+@media screen and (max-height: 550px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  img {
+    
+    left: -30em;
+    padding-left: 0.2em;
+  }
 }
 
-fieldset input {
-  box-shadow: none;
-  height: auto;
+.image {
+  width: 10em;
+  height: 10em;
+  background: linear-gradient(#322, rgb(42, 187, 42));
+  overflow: hidden;
 }
 
-#button {
-  padding: auto;
-  height: 3em;
+.social-icons {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  font-size: 25px;
 }
 
-#button:active {
-  box-shadow: 0 0 5px green;
-  background: #393131;
-  transform: rotate(2deg);
-}
-a {
-  color: aqua;
-  text-decoration: none;
-}
-
-a:visited {
-  color: cadetblue;
-}
-
-.to-sale {
+.social-icons ul, li {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.outer {
-  border: 5px solid brown;
-  width: 50%;
-}
-
-.item {
-  width: 15rem;
+  padding: 10px;
 }
