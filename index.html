@@ -3,81 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ernest-Chidakwa portfolio</title>
+  <title>Ernest Chidakwa | Front End Engineer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-
-    <div class="overlay-content">
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contacts</a></li>
-      </ul>
+  <div class="header">
+    <div class="portfolio-img">
+      <img src="images/20231031_080402.jpg" alt="ernest">
     </div>
-  </div>
 
-      <div class="open">
-        <i class="fa fa-navicon" onclick="openNav()"></i>
-      </div>
+    <div class="portfolio-title">
+      <h1>Ernest Chidakwa <span>Front End Engineer</span></h1>
 
-  <div class="container">
-    <img">
+      <a href="#projects">Projects</a>
+    </div>
 
-    <div class="details">
-      <div class="txt">
-        <p>I'am Ernest Ernest Chidakwa</p>
-      <p>Front-end Web dev</p>
-      </div>
-
-      <div class="social-icons">
-        <ul>
-          <li><a href="https://facebook.com/profile.php?id=100094614485706" ><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://wa.me/message/NE75NSOEHYQJ1"><i class="fab fa-whatsapp"></i></a></li>
-          <li><a href=""><i class="fab fa-tiktok"></i></a></li>
-          <li><a href="" ><i class="fab fa-discord"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/ernest-chidakwa-2a9bbb2a2?utm_source=share&utm_campaign=share_via&utm_content=profile"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </div>
+    <div class="header-info">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sit reiciendis quam voluptatum iste explicabo autem iure aliquam vel deserunt, est vero voluptates non veniam consequatur, sunt accusantium provident quidem.</p>
       
     </div>
-    
 
   </div>
-  
- 
 
-  <script>
-    let icons = document.querySelector('.social-icons')
+  <div id="projects">
 
-    function openNav(){
-      document.querySelector('#myNav').style.width = '80%';
-    }
-
-    function closeNav() {
-      document.querySelector('#myNav').style.width = '0%';
-    }
-
-    window.addEventListener('resize', ()=> {
-
-      if (window.innerWidth > 768){
-        document.querySelector('#myNav').style.width = '100%';
-      }else if(window.innerWidth < 768){
-        document.querySelector('#myNav').style.width = '0';
-        document.querySelector('#myNav').style.transition = '0s';
-      }
-
-      if (window.innerWidth < 350) {
-        
-      }else if (window.innerWidth > 350) {
-        
-      }
-      
-    })
- 
-  </script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

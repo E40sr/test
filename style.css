@@ -9,177 +9,76 @@
 }
 
 body {
-  background-color: #343;
-  background-image: url(images/images/Lumii_20231206_071953120.png);
+  background-color: rgb(25, 29, 25);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 450px;
+  background-position: center;
+  color: azure;
+  height: 100vh;
   width: 100%;
 }
 
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  80% {
+    
+    transform: translateY(-0.5rem);
+  }100% {
+    opacity: 7;
+    transform: translateY(0);
+  }
+}
+
 img {
-  z-index: -1;
-  position: fixed;
-  padding: 0;
-  left: 10%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
-  
-.closebtn, .open {
-    display: none;
-     font-size: 35px;
-    position: fixed;
-    right: 5%;
-    color: aliceblue;
-    top: 3%;
-    text-shadow: 0 0 4px rgb(33, 33, 37);
-  }
-
-
-  .overlay-content a {
-    color: rgb(246, 246, 246);
-    font-weight: 800;
-    text-decoration: none
-  }
-  
-  .overlay-content ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .overlay-content ul li {
-    text-decoration: none;
-    list-style: none;
-    padding: 2em;
-    color: white;
-  }
-  .overlay-content ul li a:hover {
-    color: #f1f1f1;
-    transform: scale(2);
-  }
-
-  .details {
-    padding-top: 1em;
-    padding-left: 2em;
-    font-size: 40px;
-    color: #f1f1f1;
-    font-weight: 700;
-    text-shadow: 1px 2px black;
-    display: flex;
-    flex-direction: row;
-    
-  }
-
-  .txt {
-    padding-top: 2em;
-  }
-
-
-@media screen and (max-width: 768px) {
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  img {
-    left: 10%;
-  }
-
-  .details {
-    padding-top: 10em;
-    padding-left: 1em;
-    font-size: 25px;
-    color: #f1f1f1;
-    font-weight: 700;
-    text-shadow: 1px 2px black;
-  }
-
-
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus{
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  .closebtn, .open {
-    display: block;
-  }
-
-  .overlay-content ul {
-    display: inline-block;
-
-  }
-
-  .overlay-content ul li {
-   padding: 0;
-  }
- 
+.project-div {
+  background: #aaa;
+  height: 300px;
+  width: 230px;
+  padding: 1em;
+  margin: 1em;
 }
 
-@media screen and (max-height: 550px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 
-  img {
-    
-    left: -30em;
-    padding-left: 0.2em;
+.container {
+  color: #aaa;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+}
+
+@media screen and (max-width: 2000px){
+  #projects {
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 
-.image {
-  width: 10em;
-  height: 10em;
-  background: linear-gradient(#322, rgb(42, 187, 42));
+@media screen and (max-width: 1600px){
+  #projects {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+
+.portfolio-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #818181;
   overflow: hidden;
 }
 
-.social-icons {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  font-size: 25px;
-}
-
-.social-icons ul, li {
-  list-style: none;
-  display: flex;
-  padding: 10px;
+.portfolio-img {
+  margin: 20px auto;
 }
