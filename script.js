@@ -1,11 +1,11 @@
 let projects = [
   {
-    website: "Weather App",
+    website: "Game hub",
     link: "",
     languages: ["React", "Javascript",]
   },
   {
-    website: "Larby Acadamy",
+    website: "Larby",
     link: "",
     languages: ["HTML", "CSS", "Javascript",]
   },
