@@ -1,11 +1,11 @@
 let projects = [
   {
-    website: "Weather",
+    website: "Weather App",
     link: "",
     languages: ["React", "Javascript",]
   },
   {
-    website: "Larby",
+    website: "Larby Acadamy",
     link: "",
     languages: ["HTML", "CSS", "Javascript",]
   },
@@ -36,4 +36,4 @@ projects.forEach((project) => {
   `
 })
 
-const root = document.querySelector("#projects").innerHTML = projectHTML;
+const root = document.querySelector("#projects").innerHTML += projectHTML;
