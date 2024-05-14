@@ -7,7 +7,8 @@ let projects = [
   {
     website: "Larby",
     link: "",
-    languages: ["HTML", "CSS", "Javascript",]
+    languages: ["HTML", "CSS", "Javascript",],
+    img: 'images/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg'
   },
   {
 
@@ -29,9 +30,15 @@ projects.forEach((project) => {
     <h3>
       ${project.website}
     </h3>
+    <img src=${project.img} class="project-img">
+    
     <p>
-      
+      ${project.languages}
     </p>
+   <div class="project-links">
+     <a href="#">Code</a> <a href="">Visit site</a>
+   </div>
+    
   </div>
   `
 })
