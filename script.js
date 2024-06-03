@@ -2,13 +2,14 @@ let projects = [
   {
     website: "Game hub",
     link: "",
-    languages: ["React", "Javascript",]
+    languages: ["React", "Javascript",],
+    img: 'images/Screenshot_20231221-212259.JPG'
   },
   {
     website: "Larby",
     link: "",
     languages: ["HTML", "CSS", "Javascript",],
-    img: 'images/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg'
+    img: 'images/Capture.JPG'
   },
   {
 

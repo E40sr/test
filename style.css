@@ -12,7 +12,7 @@
 }
 
 body {
-  background: linear-gradient(120deg, #541717, #44cd9f);
+  background: linear-gradient(120deg, #290808, #100b4a);
   background-repeat: no-repeat;
   background-size: 450;
   color: azure;
@@ -77,10 +77,10 @@ img {
 }
 
 .project-div {
-  background: #270f0f;
+  background: #0f1127;
   height: 300px;
   width: 230px;
-  padding: 2rem;
+  padding: 1rem;
   animation: anim 0.76s linear;
   box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, 0.15);
 }
@@ -106,8 +106,8 @@ footer {
   width: 100%;
   margin: 2rem 0;
   color: #b8e8dc;
-  background: #fff;
-  box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, 0.15);
+  background: #41101052;
+  box-shadow: 0 1.5rem 4rem rgba(150, 10, 10, 0.285);
 }
 
 @media (max-width: 2000px) {
@@ -217,12 +217,13 @@ footer {
 .project-link {
   padding: .5rem;
   width: 100px;
+  font-weight: 800;
   border-radius: 20px;
   text-decoration: none;
   display: block;
   margin: 1em auto;
-  background: linear-gradient(120deg, rgb(209, 38, 38), rgb(45, 153, 45));
-  color: rgb(233, 232, 232);
+  background: linear-gradient(120deg, rgb(248, 208, 208), rgb(167, 247, 167));
+  color: rgb(21, 13, 13);
 }
 
 .front-end-title {
