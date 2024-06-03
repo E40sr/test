@@ -33,7 +33,7 @@ body {
   }
   50% {
     color: orange;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   80% {
     color: skyblue;
