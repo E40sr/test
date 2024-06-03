@@ -33,12 +33,14 @@ body {
   }
   50% {
     color: orange;
+    transform: scale(1.5);
   }
   80% {
     color: skyblue;
   }
   100% {
     color: tomato;
+    transform: scale(1);
   }
 }
 
