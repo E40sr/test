@@ -24,7 +24,7 @@ body {
   color: tomato;
   font-weight: 800;
   display: block;
-  animation: hello 0.7s infinity;
+  animation: hello 0.7s infinite;
 }
 
 @keyframes hello {
