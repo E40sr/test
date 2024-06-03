@@ -20,6 +20,11 @@ body {
   font-family: Ubuntu;
 }
 
+.hello-txt {
+  color: tomato;
+  font-weight: 800;
+}
+
 @keyframes anim {
   0% {
     opacity: 0;
