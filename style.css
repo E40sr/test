@@ -26,32 +26,6 @@ body {
   font-family: Ubuntu;
 }
 
-<<<<<<< HEAD
-=======
-.hello-txt {
-  color: tomato;
-  font-weight: 800;
-  display: block;
-  animation: hello 1.2s infinite;
-}
-
-@keyframes hello {
-  0% {
-    color: tomato;
-  }
-  50% {
-    color: orange;
-    transform: scale(1.2);
-  }
-  80% {
-    color: skyblue;
-  }
-  100% {
-    color: tomato;
-    transform: scale(1);
-  }
-}
->>>>>>> 43133fb368b2187a7eeea952efc4f8009dabf899
 
 @keyframes anim {
   0% {
