@@ -348,7 +348,8 @@ li > span {
   position: relative;
   border: none;
   cursor: pointer;
-  
+  text-decolation: none;
+  color: #fff;
   background-color: transparent;
 }
 
