@@ -20,7 +20,36 @@
       <div class="portfolio-title">
         <h1>Ernest Chidakwa <span class="front-end-title">Front End Engineer</span></h1>
   
-        <a href="#project-div" class="project-link">Projects</a>
+        <a href="project" class="loader">
+  <div class="loader-bg">
+    <span>Projects</span>
+  </div>
+  <div class="drops">
+    <div class="drop1"></div>
+    <div class="drop2"></div>
+    <div class="drop3"></div>
+  </div>
+</a>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="liquid">
+      <feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="10"
+        result="blur"
+      ></feGaussianBlur>
+      <feColorMatrix
+        in="blur"
+        mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+        result="liquid"
+      ></feColorMatrix>
+    </filter>
+  </defs>
+</svg>
+
+
+        
       </div>
   
       <div class="header-info">
