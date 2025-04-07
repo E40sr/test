@@ -30,11 +30,11 @@ projects.forEach((project) => {
       ${project.languages}
     </p>
    <div class="project-links">
-     <a href=${project.url || "#"}>Code</a> <a href=${project.link}>Visit site</a>
+     <a href=${project.url || "#"} target="_blank">Code</a> <a href=${project.link} target="_blank">Visit site</a>
    </div>
     <p>${project.description || "No info..."}</p>
   </div>
   `
 })
 
-const root = document.querySelector("#projects").innerHTML += projectHTML;
+document.querySelector("#projects").innerHTML += projectHTML;
