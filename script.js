@@ -4,6 +4,7 @@ let projects = [
     link: "https://video-app-29gw.onrender.com/",
     languages: ["HTML", "Javascript","PeerJs","NodeJs"],
     img: 'images/Screenshot_20250407-190050~2.png',
+    url: "https://github.com/E40sr/test.git",
     description: "This is a video app that connects users randomly, I used nodejs for the backend and peerjs for the video and audio."
   },
   {
