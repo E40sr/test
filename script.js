@@ -1,7 +1,7 @@
 let projects = [
   {
     website: "Random Video Chat",
-    link: "",
+    link: "https://video-app-29gw.onrender.com/",
     languages: ["HTML", "Javascript","PeerJs","NodeJs"],
     img: 'images/Screenshot_20250407-190050~2.png',
     description: "This is a video app that connects users randomly, I used nodejs for the backend and peerjs for the video and audio."
@@ -38,7 +38,7 @@ projects.forEach((project) => {
       ${project.languages}
     </p>
    <div class="project-links">
-     <a href="#">Code</a> <a href="">Visit site</a>
+     <a href=${}>Code</a> <a href=${project.link}>Visit site</a>
    </div>
     <p>${project.description || "No info..."}</p>
   </div>
