@@ -39,7 +39,7 @@ projects.forEach((project) => {
       ${project.languages}
     </p>
    <div class="project-links">
-     <a href=${}>Code</a> <a href=${project.link}>Visit site</a>
+     <a href=${project.url || "#"}>Code</a> <a href=${project.link}>Visit site</a>
    </div>
     <p>${project.description || "No info..."}</p>
   </div>
