@@ -1,9 +1,10 @@
 let projects = [
   {
-    website: "Game hub",
+    website: "Random Video Chat",
     link: "",
-    languages: ["React", "Javascript",],
-    img: 'images/Screenshot_20250407-190050~2.png'
+    languages: ["HTML", "Javascript","PeerJs","NodeJs"],
+    img: 'images/Screenshot_20250407-190050~2.png',
+    description: "This is a video app that connects users randomly, I used nodejs for the backend and peerjs for the video and audio."
   },
   {
     website: "Larby",
@@ -39,7 +40,7 @@ projects.forEach((project) => {
    <div class="project-links">
      <a href="#">Code</a> <a href="">Visit site</a>
    </div>
-    
+    <p>${project.description || "No info..."}</p>
   </div>
   `
 })
