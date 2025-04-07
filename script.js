@@ -10,17 +10,8 @@ let projects = [
   {
     website: "Larby",
     link: "",
-    languages: ["HTML", "CSS", "Javascript",],
+    languages: ["HTML", "CSS", "Javascript"],
     img: 'images/Capture.JPG'
-  },
-  {
-
-  },
-  {
-
-  },
-  {
-
   }
 ]
 
