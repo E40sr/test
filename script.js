@@ -3,7 +3,7 @@ let projects = [
     website: "Game hub",
     link: "",
     languages: ["React", "Javascript",],
-    img: 'images/Screenshot_20231221-212259.JPG'
+    img: 'images/Screenshot_20250407-190050~2.png'
   },
   {
     website: "Larby",
