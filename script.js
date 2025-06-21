@@ -1,40 +1,50 @@
-let projects = [
+const projects = [
   {
     website: "Random Video Chat",
     link: "https://video-app-29gw.onrender.com/",
-    languages: ["HTML", "Javascript","PeerJs","NodeJs"],
-    img: 'images/Screenshot_20250407-190050~2.png',
+    languages: ["HTML", "JavaScript", "PeerJS", "Node.js"],
+    img: "images/Screenshot_20250407-190050~2.png",
     url: "https://github.com/E40sr/test.git",
-    description: "This is a video app that connects users randomly, I used nodejs for the backend and peerjs for the video and audio."
+    description:
+      "This is a video app that connects users randomly. I used Node.js for the backend and PeerJS for video/audio.",
   },
   {
     website: "Larby",
     link: "",
-    languages: ["HTML", "CSS", "Javascript"],
-    img: 'images/Capture.JPG'
-  }
-]
+    languages: ["HTML", "CSS", "JavaScript"],
+    img: "images/Capture.JPG",
+    url: "",
+    description: "",
+  },
+];
 
+const projectHTML = projects
+  .map((project) => {
+    const {
+      website,
+      link,
+      img,
+      url,
+      languages,
+      description,
+    } = project;
 
-let projectHTML = ""
-
-projects.forEach((project) => {
-  projectHTML += `
-  <div class="project-div">
-    <h3>
-      ${project.website}
-    </h3>
-    <img src=${project.img} class="project-img">
-    
-    <p>
-      ${project.languages}
-    </p>
-   <div class="project-links">
-     <a href=${project.url || "#"} target="_blank">Code</a> <a href=${project.link} target="_blank">Visit site</a>
-   </div>
-    <p>${project.description || "No info..."}</p>
-  </div>
-  `
-})
+    return `
+      <div class="project-div" data-sizing="intrinsic">
+        <h3>${website}</h3>
+        <img src="${img}" alt="${website}" class="project-img" />
+        
+        <p><strong>Languages:</strong> ${languages.join(", ")}</p>
+        
+        <div class="project-links">
+          <a href="${url || "#"}" target="_blank">Code</a>
+          <a href="${link || "#"}" target="_blank">Visit site</a>
+        </div>
+        
+        <p>${description || "No description available."}</p>
+      </div>
+    `;
+  })
+  .join("");
 
 document.querySelector("#projects").innerHTML += projectHTML;
